@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+
+:root {
+    --main-color: #0aad0a;
+    --light-color: #f0f3f2;
+    --shadow: rgba(145, 158, 171, .2) 0px 2px 4px -1px, rgba(145, 158, 171, .14) 0px 4px 5px 0px, rgba(145, 158, 171, .12) 0px 1px 10px 0px;
+    --font-family: 'Encode Sans Expanded', sans-serif;
+    --rating-color: #ffc908;
+}
+
+body {
+    font-family: var(--font-family) !important;
+}
+
+.rating-color {
+    color: var(--rating-color);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+a, a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.products :hover {
+    cursor: pointer;
+}
+
+.products .btn {
+    transition: transform 1s, opacity 1s !important;
+    transform: translateY(100%) !important;
+    opacity: 0 !important;
+}
+
+.products:hover .btn {
+    opacity: 1 !important;
+    transform: translateY(0%) !important;
+
+}
+
+.font-sm {
+    font-size: 9px !important;
+}
+
+.text-main {
+    color: var(--main-color);
+}
+
+.bg-main {
+    background-color: var(--main-color) !important;
+}
+
+.bg-main-light {
+    background-color: var(--light-color) !important;
+}
+
+.border-main {
+    border-bottom: #0aad0a solid .5px;
+}
+
+.border-outline-main {
+    border: var(--main-color) 1px solid !important;
+}
+
+.border-outline-danger {
+    border: red 1px solid !important;
+}
+
+.network-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-color);
+    color: var(--main-color);
+    padding: 10px;
+    bottom: 20px;
+    right: 20px;
+    
+}
